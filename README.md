@@ -29,7 +29,7 @@ git add .
 git commit -m "deployment configs"
 
 # ssh setup
-cat ~/.ssh/id_rsa.pub | ssh deployer@72.14.183.209 'cat >>
+cat ~/.ssh/id_rsa.pub | ssh deployer@72.14.183.209 'cat >> ~/.ssh/authorized_keys'
 ssh-add # -K on Mac OS X
 
 # deployment
